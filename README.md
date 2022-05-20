@@ -8,7 +8,7 @@
 -	[File Descriptions](#file-descriptions)
 -	[Authors](#authors)
 
-![printf-with-tmnt](./printf with tmnt.jpg)
+![printf-with-tmnt](./screenshots/printf with tmnt.jpg)
 
 ## Project Requirments
 

@@ -28,7 +28,7 @@ static int (*check_for_specifiers(const char *format))(va_list)
 	};
 
 	for (i = 0; p[i].t != NULL; i++)
-		if (*(p[i].t == *format))
+		if (*(p[i].t) == *format)
 			break;
 
 	return (p[i].f);
@@ -67,7 +67,7 @@ int _printf(const char *format, ...)
 		}
 		if (!format[i + 1])
 			return (-1);
-		_putchar(formt[i]);
+		_putchar(format[i]);
 		if (format[i + 1] == '%')
 			i += 2;
 		else

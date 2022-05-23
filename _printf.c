@@ -36,7 +36,7 @@ static int (*check_for_specifiers(const char *format))(va_list)
 
 /**
  * _printf - alternative to printf
- * @format - char * (list of argument types passed to the function)
+ * @format: char * (list of argument types passed to the function)
  *
  * Return: int (number of characters printed)
  */

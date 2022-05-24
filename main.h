@@ -29,6 +29,7 @@ int print_b(va_list b);
 int print_o(va_list o);
 int print_x(va_list x);
 int print_X(va_list X);
+int (*get_func(char s))(va_list args_list);
 /* int print_p(va_list p);
 int print_S(va_list S);
 int print_r(va_list r);

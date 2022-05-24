@@ -1,19 +1,22 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+#include <unistd.h>
 #include <stdarg.h>
+#include <stdio.h>
+#include <limits.h>
 
 /**
- * struct print - various structure types
- * @t: char (type to print)
+ * struct op - various structure types
+ * @c: char (type to print)
  * @f: int *(va_list) (function to handle print)
  *
  */
-typedef struct print
+typedef struct op
 {
-	char *t;
+	char *c;
 	int (*f)(va_list);
-} print_t;
+} op_t;
 
 int _putchar(char c);
 int _printf(const char *format, ...);
@@ -26,9 +29,10 @@ int print_b(va_list b);
 int print_o(va_list o);
 int print_x(va_list x);
 int print_X(va_list X);
-int print_p(va_list p);
+/* int print_p(va_list p);
 int print_S(va_list S);
 int print_r(va_list r);
-int print_R(va_list R);
+int print_R(va_list RA);
+*/
 
 #endif

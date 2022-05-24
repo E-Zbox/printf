@@ -6,7 +6,7 @@
 -	[Project Requirements](#project-requirements)
 	-	[General](#general)
 -	[Tasks](#tasks)
--	[File Descriptions](#file-descriptions)
+-	[Descriptions](#file-descriptions)
 -	[Authors](#authors)
 
 ![printf-with-tmnt](./screenshots/printf%20with%20tmnt.jpg)
@@ -27,6 +27,22 @@
 
 ## Tasks
 
-## File Descriptions
+## Descriptions
+
+The _printf() function produces output according to a format which is described below. This function write its output to the stdout, the standard output. Returns the count of printed characters when the function is successful.
+The available convertion specifiers are:
+
+-	`%c`: prints a single character.
+-	`%c`: prints a string of characters.
+-	`%d`: prints integers.
+-	`%i`: prints integers.
+-	`%b`: prints the binary representation of an unsigned decimal.
+-	`%u`: prints unsigned integers.
+-	`%x`: prints the hexadecimal representation of an unsigned decimal in lowercase letters
+-	`%X`: prints the hexadecimal representation of an unsigned decimal in uppercase letters
+-	`%r`: prints a reversed string
 
 ## Authors
+
+Ononogbu Ebenezer, Jude Uchechukwu
+

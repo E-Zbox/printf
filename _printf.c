@@ -25,15 +25,16 @@ for (i = 0; format[i] != '\0'; i++)
 {
 if (format[i] == '%')
 {
-if (format[i + 1] == '%')
+if (format[i +1] == '%')
 {
 count += _putchar(format[i]);
 i++;
 }
-else if (format[i + 1] != '\0')
+else if (format[i +1] != '\0')
 {
-getFunc = get_func(format[i + 1]);
-count += (getFunc ? getFunc(args_list) : _putchar(format[i]) + _putchar(format[i + 1]));
+getFunc = get_func(format[i +1]);
+count += (getFunc ? getFunc(args_list) : _putchar(format[i]) + 
+_putchar(format[i +1]));
 i++;
 }
 }

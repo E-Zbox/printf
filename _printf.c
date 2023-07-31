@@ -33,8 +33,8 @@ i++;
 else if (format[i +1] != '\0')
 {
 getFunc = get_func(format[i +1]);
-count += (getFunc ? getFunc(args_list) : _putchar(format[i]) + 
-_putchar(format[i +1]));
+count += (getFunc ? getFunc(args_list) :
+_putchar(format[i]) + _putchar(format[i +1]));
 i++;
 }
 }
